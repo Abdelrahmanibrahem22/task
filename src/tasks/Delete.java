@@ -11,13 +11,16 @@ package tasks;
  */
 public class Delete {
     static void delete_element(int []a,int n){
-        int size=a.length;
-        for (int i = 0; i < size; i++) {
+        for (int i = 0; i <a.length; i++) {
             if (a[i]==n)
             {
-             continue;  
+                for (int j = i; j <a.length-1; j++) {
+                    a[j]=a[j+1];
+                   
+                }
+ 
             }
-            System.out.println(a[i]);
+           
         }
     
     }

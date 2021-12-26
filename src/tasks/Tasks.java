@@ -28,7 +28,10 @@ public class Tasks {
         }
          */
       // Delete.delete_element(a, n);
-      Reverse.reverse(a);
+    Delete.delete_element(a, n);
+        for (int i = 0; i < a.length-1; i++) {
+            System.out.println(a[i]);
+        }
     }
  
 }
