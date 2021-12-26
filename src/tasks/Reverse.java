@@ -10,12 +10,12 @@ package tasks;
  * @author SMART
  */
 public class Reverse {
-    static int[] reverse(int[]a){
-    int[]b=new int[a.length];
-        for (int i =0; i<a.length; i++) {
-            b[i]=a[a.length-i-1];
-            
+    static void reverse(int[]a){
+    
+        for (int i =a.length-1; i>=0; i--) {
+           
+            System.out.println(a[i]);
         }
-    return b;
+   
     }
 }

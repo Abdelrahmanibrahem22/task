@@ -10,15 +10,15 @@ package tasks;
  * @author SMART
  */
 public class Delete {
-    static int[] delete_element(int []a,int n){
-        int[]b=new int[a.length-1];
-        for (int i = 0,j=0; i < a.length; i++) {
-            if (a[i]==n) {
-                continue;
+    static void delete_element(int []a,int n){
+        int size=a.length;
+        for (int i = 0; i < size; i++) {
+            if (a[i]==n)
+            {
+             continue;  
             }
-            b[j++]=a[i];
+            System.out.println(a[i]);
         }
-    return b;
     
     }
 }
